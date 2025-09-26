@@ -44,3 +44,10 @@ input[type="button"]{
     width: 200px;
     font-size: 26px;
 }
+
+#resultado{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
