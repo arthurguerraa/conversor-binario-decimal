@@ -1,9 +1,12 @@
+:root{
+    font-size: 62.5%; 
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 62.5%; 
 }
 
 body{
@@ -20,7 +23,7 @@ body{
     align-items: center;
     height: 30rem;
     width: 50rem;
-    border-radius: 20px;
+    border-radius: 2rem;
     background-color: aqua;
 }
 
@@ -31,13 +34,12 @@ body{
 
 input{
     margin-top: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
-input[type="number"]{
+input[type="text"]{
     height: 4rem;
     width: 25rem;
-    
     text-align: center;
 }
 
@@ -48,8 +50,8 @@ input[type="button"]{
 }
 
 #resultado{
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: black;
 }
