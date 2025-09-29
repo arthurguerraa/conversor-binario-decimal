@@ -10,6 +10,23 @@
     <div class="container">
         <h1>Conversor Binário-Decimal</h1>
         <input type="text" name="binario" id="binario" maxlength="8" placeholder="Digite 8 bits (0s e 1s)">
+        <div class="opcoes">
+            <select name="base" id="base">
+                <option value="">Selecione uma opção</option>
+                <option value="decimal">Decimal</option>
+                <option value="binario">Binário</option>
+                <option value="hexadecimal">Hexadecimal</option>
+                <option value="octal">Octal</option>
+            </select>
+            <select name="conversao" id="base">
+                <option value="">Selecione uma opção</option>
+                <option value="decimal">Decimal</option>
+                <option value="binario">Binário</option>
+                <option value="hexadecimal">Hexadecimal</option>
+                <option value="octal">Octal</option>
+            </select>
+        </div>
+        
         <input type="button" value="Converter" id="converter">
         <p id="resultado"></p>
     </div>
