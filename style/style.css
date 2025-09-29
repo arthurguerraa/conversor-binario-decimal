@@ -44,6 +44,8 @@ input[type="text"]{
 }
 
 .opcoes{
+    display: flex;
+    align-items: center;
     margin-top: 2rem;
 }
 
@@ -54,12 +56,13 @@ input[type="text"]{
 
 .material-symbols-outlined {
   cursor: pointer;
+  margin: 0 1rem;
 }
 
 input[type="button"]{
-    height: 6rem;
-    width: 18rem;
-    font-size: 2.5rem;
+    height: 4rem;
+    width: 14rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
