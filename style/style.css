@@ -52,10 +52,15 @@ input[type="text"]{
     font-size: 1.5em;
 }
 
+.material-symbols-outlined {
+  cursor: pointer;
+}
+
 input[type="button"]{
     height: 6rem;
     width: 18rem;
     font-size: 2.5rem;
+    cursor: pointer;
 }
 
 #resultado{
