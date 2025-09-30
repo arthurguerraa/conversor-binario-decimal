@@ -1,4 +1,4 @@
-const binarioInput = document.querySelector("#numero");
+const numeroInput = document.querySelector("#numero");
 const baseAtual = document.querySelector("#base");
 const baseConversao = document.querySelector("#conversao");
 const btnConverter = document.querySelector("#converter");
