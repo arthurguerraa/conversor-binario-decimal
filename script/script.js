@@ -1,33 +1,23 @@
-const numeroInput = document.querySelector("#numero");
-const baseAtual = document.querySelector("#base");
-const baseConversao = document.querySelector("#conversao");
+// Captura dos elementos do DOM
+let numeroInput = document.querySelector("#numero"); 
+let baseAtual = document.querySelector("#base"); 
+let baseConversao = document.querySelector("#conversao"); 
 const btnConverter = document.querySelector("#converter");
-const resultado = document.querySelector("#resultado");
+const resultadoElemento = document.querySelector("#resultado");
 
-function converteBinarioParaDecimal(numeroBinario){
-    const decimal = parseInt(numeroBinario, 2);
-    return decimal;
-}
 
-function converteDecimal(numeroBase, numeroConversao){
-    const numeroConvertido = "";
-    if(numeroConversao.value === "binario"){
-         numeroConvertido = (numeroBase, 2);
-    }else if(numeroConversao === "hexadecimal"){
-        numeroConvertido = (numeroBase, 16);
-    }else if(numeroConversao === "octal"){
-        numeroConvertido === (numeroBase, 8);
-    }
-
+function converteParaBaseDesejada(baseOrigem, baseDesejada, numeroInp){
+    let numeroConvertido = parseInt(numeroInp, baseOrigem).toString(baseDesejada);
     return numeroConvertido;
 }
 
-btnConverter.addEventListener('click', () => {
-    const resultadoConversao = ""; 
-    if (base.value === "decimal"){
-        resultadoConversao = converteDecimal(base, conversao);
-        resultado.innerHTML = `O resultado é ${resultadoDecimal}`;
-    }
-    
+btnConverter.addEventListener('click', () =>{
+
+    let numeroInp = numeroInput.value.trim();
+    let baseOrigem = Number(baseAtual.value);
+    let baseDestino = Number(baseConversao.value);
+
+    let numeroConvertido = converteParaBaseDesejada(baseOrigem, baseDestino, numeroInp);
+    resultadoElemento.innerHTML = `O resultado é ${numeroConvertido}`;
 });
 
