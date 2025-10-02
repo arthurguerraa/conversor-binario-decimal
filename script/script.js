@@ -4,6 +4,7 @@ let baseAtual = document.querySelector("#base");
 let baseConversao = document.querySelector("#conversao"); 
 const btnConverter = document.querySelector("#converter");
 const resultadoElemento = document.querySelector("#resultado");
+const btnSwap = document.querySelector("#btn-swap");
 
 
 function converteParaBaseDesejada(baseOrigem, baseDesejada, numeroInp){
@@ -19,5 +20,12 @@ btnConverter.addEventListener('click', () =>{
 
     let numeroConvertido = converteParaBaseDesejada(baseOrigem, baseDestino, numeroInp);
     resultadoElemento.innerHTML = `O resultado é ${numeroConvertido}`;
+});
+
+btnSwap.addEventListener('click', () => {
+  const a = baseAtual.value;
+  baseAtual.value = baseConversao.value;
+  baseConversao.value = a;
+  atualizarEstadoBotoes();
 });
 
