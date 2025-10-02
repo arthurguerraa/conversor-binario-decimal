@@ -1,4 +1,7 @@
 :root{
+    --cor-primaria: #F4F4F9;
+    --cor-secundaria: #2E2E3A;
+    --cor-alternativa: #4A90E2;
     font-size: 62.5%; 
 }
 
@@ -15,6 +18,7 @@ body{
     align-items: flex-start;
     margin-top: 5.0rem;
     height: 100vh;
+    background-color: var(--cor-primaria);
 }
 
 .container{
@@ -24,7 +28,9 @@ body{
     height: 30rem;
     width: 40rem;
     border-radius: 2rem;
-    background-color: aqua;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: 2px black solid;
 }
 
 .container h1{
@@ -64,6 +70,8 @@ input[type="button"]{
     width: 14rem;
     font-size: 2rem;
     cursor: pointer;
+    color: var(--cor-primaria);
+    background-color: var(--cor-alternativa);
 }
 
 #resultado{
